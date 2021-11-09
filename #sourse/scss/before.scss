@@ -1,0 +1,59 @@
+//ШРИФТ=====================================================================
+
+$font-family: "PlusJakartaSans", sans-serif;
+$font-size: 16px;
+
+//ПІДКЛЮЧЕНІ ШРИФТИ=====================================================================
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@font-face {
+	font-family: "PlusJakartaSans";
+	src: url("../fonts/PlusJakartaSans-Bold.eot");
+	src: local("☺"), url("../fonts/PlusJakartaSans-Bold.woff") format("woff"),
+		url("../fonts/PlusJakartaSans-Bold.ttf") format("truetype"),
+		url("../fonts/PlusJakartaSans-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PlusJakartaSans";
+	src: url("../fonts/PlusJakartaSans-ExtraBold.eot");
+	src: local("☺"), url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff"),
+		url("../fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype"),
+		url("../fonts/PlusJakartaSans-ExtraBold.svg") format("svg");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PlusJakartaSans";
+	src: url("../fonts/PlusJakartaSans-Medium.eot");
+	src: local("☺"), url("../fonts/PlusJakartaSans-Medium.woff") format("woff"),
+		url("../fonts/PlusJakartaSans-Medium.ttf") format("truetype"),
+		url("../fonts/PlusJakartaSans-Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PlusJakartaSans";
+	src: url("../fonts/PlusJakartaSans-Regular.eot");
+	src: local("☺"), url("../fonts/PlusJakartaSans-Regular.woff") format("woff"),
+		url("../fonts/PlusJakartaSans-Regular.ttf") format("truetype"),
+		url("../fonts/PlusJakartaSans-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+//ПІДКЛЮЧЕНІ ШРИФТИ=====================================================================
+
+//ШРИФТ=====================================================================
+//CONTAINER=====================================================================
+$container-width: 1140px;
+$container-padding: 15px;
+//CONTAINER=====================================================================
+//VARIABLES=====================================================================
+$darkblue: #282b6d;
+$lightblue: #5735d2;
+$blue: #5735d2;
+$orange: #fe9168;
+$grey: #9aa5b6;
+//VARIABLES=====================================================================

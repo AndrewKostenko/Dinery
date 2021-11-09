@@ -1,0 +1,180 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: $font-size;
+	font-weight: 400;
+	font-family: $font-family;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+// ===============================================================================================================
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	width: 100%;
+	max-width: $container-width + $container-padding * 2;
+	padding: 0 $container-padding;
+	margin: 0 auto;
+
+	// .header_subtitle
+	&_subtitle {
+		line-height: 20 / 16 * 100%;
+		letter-spacing: 1px;
+		color: $orange;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	// .header_title
+	&_title {
+		text-transform: capitalize;
+		font-size: 60px;
+		font-weight: 800;
+		line-height: 80 / 60 * 100%;
+		letter-spacing: -0.5px;
+		color: $darkblue;
+		margin-bottom: 24px;
+		@media (max-width: 700px) {
+			margin-bottom: 15px;
+			font-size: 40px;
+		}
+		@media (max-width: 450px) {
+			font-size: 30px;
+		}
+		span {
+			text-decoration: underline;
+			text-decoration-color: $darkblue;
+			color: #7879f1;
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: $darkblue;
+		}
+	}
+}
+body.lock {
+	overflow: hidden;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	padding: 12px 36px;
+	color: $darkblue;
+	background: #ffffff;
+	box-shadow: 0px 17px 47px rgba(46, 74, 116, 0.02);
+	border-radius: 12px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 28 / 14 * 100%;
+	transition: 300ms;
+	@media (any-hover: hover) {
+		&:hover {
+			background: $blue;
+			color: white;
+		}
+	}
+	&-transparent {
+		background: transparent;
+	}
+
+	&-blue {
+		background-color: $blue;
+		color: white;
+		border-radius: 12px;
+		font-size: 16px;
+		@media (any-hover: hover) {
+			&:hover {
+				background: white;
+				color: $blue;
+			}
+		}
+	}
+	&-orange {
+		font-size: 16px;
+		padding: 18px;
+		width: 100%;
+		background: $orange;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		border-radius: 12px;
+		box-sizing: border-box;
+		@media (any-hover: hover) {
+			&:hover {
+				background: white;
+				color: $orange;
+				border: 1px solid $orange;
+			}
+		}
+	}
+}
